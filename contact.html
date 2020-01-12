@@ -1,208 +1,120 @@
-<!--Responsive Navigation Bar Tutorial | HTML/CSS/JAVASCRIPT/Portfolio-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
- <meta charset="UTF-8" />
- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <meta http-equiv="X-UA-Compatible" content="ie=edge" />
- <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet" />
- <link rel="stylesheet" href="assets/css/style.css" />
+ <!-- Required meta tags -->
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
- <title>Navigation</title>
-
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+ <link href="https://fonts.googleapis.com/css?family=Modern+Antiqua&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Cute+Font&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+ 
+ <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="stylesc.css">
+ <title>Hello, world!</title>
 </head>
 
 <body>
+ <!--Nav Bar-->
+<section class="main">
+  <div class="container-flex" id="container o">
+    <div class="row" id="rowone">
+      <div class="col-sm-12" id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">
+            <H6 id="Myname">Jonathan Labeau</H6>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
 
- <nav>
-  <div class="logo">
-   <h5>
-    Jonathan Labeau
-   </h5>
-  </div>
-  <ul class="nav-links">
-   <li>
-    <a href="index.html">About Me</a>
-   </li>
-   <li>
-    <a href="portfolio.html">Portfolio</a>
-   </li>
-   <li>
-    <a href="contact.html">Contact</a>
-   </li>
-  </ul>
+                <a class="nav-link" href="Index.html">Me</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Portfolio
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="Portfolio.html">Audiovisual/Design</a>
+                  <a class="dropdown-item" href="#">News</a>
+                  <a class="dropdown-item" href="#">Discoveries</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    <!--My showcase Info/ Picture/Gif pluse My info (Responsive-->
 
- </nav>
- <section>
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" id="pictureone">
 
-  <br>
+     <img src="https://i.imgur.com/0wq4p5q.gif" alt="">
 
 
-  <div class="flex-container"><img src="https://media.giphy.com/media/l0Iy3qmrODEarmfHq/giphy.gif" style="border-radius: 50%;" height="190" alt="">
+    </div>
 
-   <div style="flex-grow: 6">
-    <H3 style="font-size: 20px; color: white;marg">Contact <sup>Me</sup></H3>
 
-    <br>
-    <p style="color: rgb(255, 254, 254);">
-    <p style="color: white" style="color: white;">
-     Do you have a creative business plan or project idea? If you need a developer to make a prototype, diagram and or full project, I can help you ctransfomr your concept into a successfull and functional reality. For a free consult and realistic time/budget constraints, leave a message with as many details. Provide the purpose and utility of your initial idea, and reference any examples that may already exist in the market. 
-
-    </p>
-    <br>
-    <p style="color: white">
-    </p>
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-7" id="info about me">
+     <h6 id="header">How can I help you?</h6>
+     <hr>
     
-
-
-
-    </div>
- </section>
-
- <br>
- <section id="vid">
- 
-<h3 style="color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin-left: 3%;">What Can I do For You?</h3>
-<br>
-
-<div class="container">
-  <form action="/action_page.php">
-    <div class="row">
-      <div class="col-25">
-        <label for="fname" style="color: white;">First Name</label>
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
       </div>
-      <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">What type of project are you thinking of</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>Just an idea now(feasibility and range)</option>
+          <option>Web development</option>
+          <option>Application</option>
+          <option>Animation </option>
+          <option>Diagram and/or functional process improvements</option>
+          <option>Fully operative system</option>
+          <option>Other</option>
+        </select>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="lname" style="color: white;">Last Name</label>
+      <div class="form-group">
+        <label for="exampleFormControlSelect2">Time Constraints</label>
+        <select multiple class="form-control" id="exampleFormControlSelect2">
+          <option>A week</option>
+          <option>A month</option>
+          <option>A year</option>
+          <option>Undefined</option>
+          <option>You tell me</option>
+        </select>
       </div>
-      <div class="col-75">
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Describe the project you seek to develop</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
-    </div>
-    
-   
-    <div class="row">
-      <div class="col-25">
-        <label for="subject" style="color: white;">Subject</label>
-      </div>
-      <div class="col-75">
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      </div>
-    </div>
-    <div class="row">
-      <input type="submit" value="Submit">
-    </div>
-  </form>
-</div>c
- </section>
- <!--
+    </form>
+     <br>
 
- <section class="center">
-  <center>
-   <div id="London" class="tabcontent">
-    <h1>London</h1>
-    <p>London is the capital city of England.</p>
-   </div>
-
-   <div id="Paris" class="tabcontent">
-    <h1>Paris</h1>
-    <p>Paris is the capital of France.</p>
-   </div>
-
-   <div id="Tokyo" class="tabcontent">
-    <h1>Tokyo</h1>
-    <p>Tokyo is the capital of Japan.</p>
-   </div>
-
-   <div id="Oslo" class="tabcontent">
-    <h1>Oslo</h1>
-    <p>Oslo is the capital of Norway.</p>
-   </div>
-
-   <button class="tablink" onclick="openCity('London', this,)" id="defaultOpen">London</button>
-   <button class="tablink" onclick="openCity('Paris', this, )">Paris</button>
-   <button class="tablink" onclick="openCity('Tokyo', this, )">Tokyo</button>
-   <button class="tablink" onclick="openCity('Oslo', this,  )">Oslo</button>
-  </center>
- </section>-->
-
- <script src="assets/Javascript/javascript.js" ;></script>
-
-
- <br>
-
-
- <section id="original">
-  <section id="first">
-   <h4>What is a Full Stack Developer?</h4>
-   <br>
-   <hr>
-   <br>
-   <p> A Full Stack Developer is a person dedicated at creating general solution to systematic grids, which increase the
-    utility and productivity of informatic channels</p>
-
-   <div class="dropdown">
-    <button class="dropbtn">More</button>
-    <div class="dropdown-content">
-     <a href="#">Information </a>
-     <a href="#">Victory Place</a>
-     <a href="#">The Improvement</a>
-
-    </div>
+    </div><br>
 
    </div>
-   <br>
-   <br>
-   <hr>
-   <br>
-   <section class="center">
-
-   </section>
-  </section>
-  <section id="second">
-   <h4>Business Potential</h4>
-   <br>
-   <hr>
-   <br>
-   <p>Increase operational and resource availability, for client linkage and growth. </p>
-
-   <br>
-   <br>
-   <br>
-
-
-   <hr>
-  </section>
-  <section id="third">
-   <h4>Articles</h4>
-   <br>
-   <hr>
-   <br>
-   <p> eaque velit obcaecati voluptate! Dicta vitae perferendis maxime nobis reprehenderit vel officiis nam sed natus
-    unde. Id voluptate deleniti architecto officiis nesciunt officia</p>
-
-
-   <br>
-
-   
-
-   <hr>
-
-  </section>
-
-  <br>
-  <br>
-  <div id="footer">
-   <p>Copyright (c) 2019 JonathanLabeau website/ All rights reserved</p>
   </div>
-
+  </div>
  </section>
+ <!-- Optional JavaScript -->
+ <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
-
 
 </html>

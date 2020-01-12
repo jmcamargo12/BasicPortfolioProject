@@ -1,154 +1,95 @@
-<!--Responsive Navigation Bar Tutorial | HTML/CSS/JAVASCRIPT/Portfolio-->
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  
-  <title>Navigation</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Modern+Antiqua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cute+Font&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 
-</head>
+    <title>Hello, world!</title>
+  </head>
 
-<body>
-
-  <nav>
-    <div class="logo">
-      <h5>
-        Jonathan Labeau
-      </h5>
-    </div>
-    <ul class="nav-links">
-      <li>
-        <a href="index.html">About Me</a>
-      </li>
-      <li>
-        <a href="portfolio.html">Portfolio</a>
-      </li>
-      <li>
-        <a href="contact.html">Contact</a>
-      </li>
-    </ul>
-   
-  </nav>
-  <section>
-
-<br>
-
-
-<div class="flex-container"><img src="https://media.giphy.com/media/RdKPvP2TAFjZfLFZlZ/giphy.gif" style="border-radius: 50%;" height="190" alt="" >
-
-  <div style="flex-grow: 6">
-    <H3 style="font-size: 20px; color: white;"> About <sup>Me</sup></H3>
-
-    <br>
-    <p style="color: rgb(255, 254, 254);"><b> Born in Venezuela, I grew up in the United States  after my french side of the family decided to seek a better future in Florida. Soon enough I was attending heat games and enjoying the traditional values of what I've come to embrace as my hometown city of roots,Miami.</p>
-      <br>
-    <p style="color: rgb(255, 254, 254);">  
-    Graduated from FIU and the University of Miami, I'm an Economist specialized in Full Stack Development, carrying out diverse projects amongst a variety of fields and businesses, my dedication and passionn towards layering the success of my clients vision, is key in the attainment of the truest form of quality I celebrate with every finished project  </b></p></div>
-</section>
-
-<br>
-
-<section class="center">
-  <center><div id="London" class="tabcontent">
-    
-  </div>
-  
-  <div id="Paris" class="tabcontent">
-   
-  </div>
-  
-  <div id="Tokyo" class="tabcontent">
-    
-  </div>
-  
-  <div id="Oslo" class="tabcontent">
-    
-  </div>
-  
-  <button class="tablink" onclick="openCity('London', this,)" id="defaultOpen">Creating</button>
-  <button class="tablink" onclick="openCity('Paris', this, )">Perspective</button>
-  <button class="tablink" onclick="openCity('Tokyo', this, )">In</button>
-  <button class="tablink" onclick="openCity('Oslo', this,  )">Motion</button>
- </center>
-  </section>
-
-  <script src="assets/Javascript/javascript.js" ;></script>
- 
-  
-  <br>
-
-
-<section id="original">
-<section id="first">
-<h4>What is a Full Stack Developer?</h4>
-<br>
-<hr>
-<br>
-<p> A Full Stack Developer is a person dedicated at creating general solution to systematic grids, which increase the utility and productivity of informatic channels</p>
-
-<div class="dropdown">
-  <button class="dropbtn">More</button>
-  <div
-   class="dropdown-content">
-    <a href="#">Information </a>
-    <a href="#">Victory Place</a>
-    <a href="#">The Improvement</a>
-
-  </div>
-  
-</div>
-<br>
-<br>
-<hr>
-<br>
-<section class="center">
-  
-</section>
-</section> 
-<section id="second">
-<h4>Business Potential</h4>
-<br>
-<hr>
-<br>
-<p>Increase     operational and resource availability, for client linkage and growth. </p> 
-
-<br>
-<br>
-<br>
-
-
-<hr>
-</section> 
-<section id="third">
-<h4>Articles</h4>
-<br>
-<hr>
-<br>
-<p> eaque velit obcaecati voluptate! Dicta vitae perferendis maxime nobis reprehenderit vel officiis nam sed natus unde. Id voluptate deleniti architecto officiis nesciunt officia</p> 
-
-
-<br>
-
-
-<hr>
-
-</section> 
-
-
-<section>
-<br>
-<br>
-  <div id="footer">
-    <p>Copyright (c) 2019 JonathanLabeau website/ All rights reserved</p>
-  </div>
-
-
-</section>
-</body>
-
+  <body>
+    <!--Nav Bar-->
+    <section class="main">
+      <div class="container-flex" id="container o">
+        <div class="row" id="rowone">
+          <div class="col-sm-12" id="navbar"><nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <a class="navbar-brand" href="#"><H6 id="Myname" >Jonathan Labeau</H6></a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+             <li class="nav-item active">
+          
+              <a class="nav-link" href="Contact.html">Contact</a>
+             </li>
+             <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false">
+             Portfolio
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+               <a class="dropdown-item" href="Portfolio.html">Audiovisual/Design</a>
+               <a class="dropdown-item" href="#">News</a>
+               <a class="dropdown-item" href="#">Discoveries</a>
+              </div>
+             </li>
+            </ul>
+           </div>
+          </nav>
+         </div>
+          <!--My showcase Info/ Picture/Gif pluse My info (Responsive-->
+           
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" id="pictureone">
+              
+               <img src="https://www.navilsoftwares.com/img/gif/career1.gif" alt="">
+            
+              
+             </div>
+             
+            
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-7" id="info about me"><h5 id="header">Me <sub>&</sub> <sup>how I work</sup></h5><hr> <p>I'm a creative individual with an ample capacity at developing ambitious projects. It all starts with thoughts and the proper search for optimal resorces to expand these thoughts, into a transformable idea, which well put together starts giving meaning and worth to the concept, an angle, a point, a shape; which all really, will amount to the begining of positive change forward, towards growth in development. This first wave of change, we harvest into collaborative efforts, and expand onward to produce a finilazed goal, prototype, projection, model and/or systematic platform, that operates efficiently and maximizes peak results. </p>
+            <br>
+             
+             </div><br>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

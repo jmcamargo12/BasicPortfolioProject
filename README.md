@@ -1,2 +1,0 @@
-# PortfolioProject
-Foundation for work
